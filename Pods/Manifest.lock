@@ -1,0 +1,94 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - GPUImage (0.1.7)
+  - GTSDK (1.4.2)
+  - INTULocationManager (4.2.0)
+  - KSYGPULive_iOS (1.4.4):
+    - GPUImage
+  - Mantle (1.5.7):
+    - Mantle/extobjc (= 1.5.7)
+  - Mantle/extobjc (1.5.7)
+  - Masonry (1.0.0)
+  - MJRefresh (3.1.0)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
+  - Pingpp/Alipay (2.2.4):
+    - Pingpp/Core
+  - Pingpp/Core (2.2.4):
+    - Pingpp/Network
+  - Pingpp/Network (2.2.4)
+  - Pingpp/Wx (2.2.4):
+    - Pingpp/Core
+  - RKNotificationHub (2.0.1)
+  - SSKeychain (1.4.0)
+  - UMengAnalytics-NO-IDFA (4.0.3)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Crashlytics
+  - Fabric
+  - FMDB
+  - GTSDK
+  - INTULocationManager
+  - KSYGPULive_iOS (from `https://github.com/ksvc/KSYLive_iOS.git`)
+  - Mantle (~> 1.5.4)
+  - Masonry
+  - MJRefresh
+  - NJKWebViewProgress
+  - Pingpp/Alipay (~> 2.2.4)
+  - Pingpp/Wx (~> 2.2.4)
+  - RKNotificationHub
+  - SSKeychain
+  - UMengAnalytics-NO-IDFA
+
+EXTERNAL SOURCES:
+  KSYGPULive_iOS:
+    :git: https://github.com/ksvc/KSYLive_iOS.git
+
+CHECKOUT OPTIONS:
+  KSYGPULive_iOS:
+    :commit: 502b869214993f6b3673180129291369b2253a69
+    :git: https://github.com/ksvc/KSYLive_iOS.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  GTSDK: 51a12836895312a872f75a2fe0f2e788dee75b19
+  INTULocationManager: 73f8254b3d05c897c56bb13c190e5b7c648c0998
+  KSYGPULive_iOS: 2dc5f23d74ff9628c5c4118992c247e827887624
+  Mantle: 4af47cf9547a4d0ad145a48cd0be3b411a5ae2b8
+  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
+  Pingpp: 89c262bc06cd559b318595c43af3926f1d851334
+  RKNotificationHub: d80905a948c79c11673345f807133a0bfd17e320
+  SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
+  UMengAnalytics-NO-IDFA: 173a5a2541536225f4c947935560975136f18a34
+
+COCOAPODS: 0.39.0

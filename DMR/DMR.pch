@@ -1,0 +1,69 @@
+//
+//  DMR.pch
+//  DMR
+//
+//  Created by mac110 on 16/5/27.
+//  Copyright © 2016年 wangzitao. All rights reserved.
+//
+
+#ifndef DMR_pch
+#define DMR_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import "EaseUI.h"
+#import "EMSDK.h"
+
+//全局总开关，控制运行环境是否为Test环境
+#define isTestEnvironment 1
+
+#import <Masonry.h>
+#import "DMRTabBarController.h"
+#define MainTabBar          [DMRTabBarController tabBar]
+
+//1、注释后，可打开日志打印系统
+//#define DEBUG_DMR
+
+//添加iosDebugLog框架
+#import "CLog.h"
+
+//我的商城url地址
+#define youzanURL @"http://wap.koudaitong.com/v2/feature/dbt7blcj"
+// App在itunes中的地址
+#define APP_URL @"http://itunes.apple.com/lookup?id=1004321682"
+//设备ID
+#define deviceid [UIDevice currentDevice].identifierForVendor.UUIDString
+//App版本
+#define versionid [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+//iOS系统版本
+#define IOS_SYSTEM ([[[UIDevice currentDevice] systemVersion] floatValue])
+#define ios8x [[[UIDevice currentDevice] systemVersion] floatValue] >=8.0f
+#define ios7x ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0f)
+//判断设备是否为iPhone6Plus
+#define iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242,2208), [[UIScreen mainScreen] currentMode].size) : NO)
+//判断设备是否为iPhone6
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+//判断设备是否为iPhone4
+#define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define KAppIDForSign               @"894d177b-8b0f-4aa4-88f0-7459be0772cf"
+#define KAppSecretForSign           @"bc65b047-2929-4651-9c7a-139f801fdb21"
+#define KTestAppIDForSign           @"9c2eab04-d675-4d79-ba2d-7a3cbcdbbcbc"
+#define KTestAppSecretForSign       @"ad0e1390-9d75-4434-acf4-ee30d4ad71a9"
+
+#define Screen_height [[UIScreen mainScreen] bounds].size.height
+#define Screen_width [[UIScreen mainScreen] bounds].size.width
+#define WindowSize          [UIApplication sharedApplication].keyWindow.frame.size
+#define ApplicationDelegate    ((AppDelegate*)[UIApplication sharedApplication].delegate)
+
+#define WeakObject(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define KHeaderURL          (isTestEnvironment ? @"http://test.app.dameiren.com/" : @"http://app.dameiren.com/")
+#define KResoureURL         (isTestEnvironment ? @"http://test.res.app.dameiren.com/" : @"http://res.app.dameiren.com/")
+
+#define UserDefault         [NSUserDefaults standardUserDefaults]
+#define RGB(r,g,b,alp) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:alp]
+#define CurrentUserKey @"currentUser"
+
+#endif /* DMR_pch */
